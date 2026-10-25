@@ -1,0 +1,53 @@
+﻿file,field,type,description
+publication_metadata.csv,study_id,string,"Stable S01-S31 study identifier; original review ID, not publication order."
+publication_metadata.csv,study,string,System or study name used in the manuscript.
+publication_metadata.csv,citation_key,string,BibTeX key in the manuscript.
+publication_metadata.csv,review_year,integer,Year used in the manuscript publication distribution under the June 2026 cutoff rule.
+publication_metadata.csv,review_publication_type,string,"Publication type available at the June 2026 cutoff: journal, conference, or preprint."
+publication_metadata.csv,bibliography_year,integer,Year of the version cited in the current bibliography; may differ from review_year.
+publication_metadata.csv,bibliography_entry_type,string,Current BibTeX entry type.
+publication_metadata.csv,title,string,Title from the current bibliography.
+publication_metadata.csv,authors,string,"BibTeX author list, preserving any reported and others truncation."
+publication_metadata.csv,venue,string,Journal or conference title from the current bibliography.
+publication_metadata.csv,doi,string,DOI if documented.
+publication_metadata.csv,url,string,Primary publisher or preprint link.
+publication_metadata.csv,arxiv_id,string,Documented arXiv identifier where available.
+publication_metadata.csv,source_urls,list,Links supporting study identity and publication metadata.
+publication_metadata.csv,review_year_basis,string,"Formal publication/early access or initial arXiv submission, according to cutoff availability."
+study_coding.csv,study_id,string,"Stable S01-S31 study identifier; original review ID, not publication order."
+study_coding.csv,study,string,System or study name used in the manuscript.
+study_coding.csv,citation_key,string,BibTeX key in the manuscript.
+study_coding.csv,principal_contribution,string,One primary lifecycle stage.
+study_coding.csv,lifecycle_coverage,list,Non-exclusive delivered stage outputs.
+study_coding.csv,supporting_stage_outputs,list,Dagger-marked supporting outputs in the manuscript.
+study_coding.csv,task_families,list,Non-exclusive output-based task-family codes.
+study_coding.csv,knowledge_resources,list,Non-exclusive retrieved resource types.
+study_coding.csv,retrieval_components,list,Non-exclusive retrieval mechanisms.
+study_coding.csv,integration_route,string,One principal integration route.
+study_coding.csv,repeated_conditioning,boolean,Inference-time reuse or correction across generation steps.
+study_coding.csv,reasoning_mode,string,One principal generative reasoning mode.
+study_coding.csv,contrastive_comparison,boolean,Additional orthogonal contrastive reasoning code.
+study_extraction.csv,study_id,string,"Stable S01-S31 study identifier; original review ID, not publication order."
+study_extraction.csv,study,string,System or study name used in the manuscript.
+study_extraction.csv,citation_key,string,BibTeX key in the manuscript.
+study_extraction.csv,task_output_summary,string,English description of the delivered target outputs and coding boundaries.
+study_extraction.csv,query,string,Reported primary-system evidence-retrieval query or query construction; not the survey literature-search query.
+study_extraction.csv,knowledge_unit_representation_index,string,"Retrieved evidence unit, representation, or indexing details."
+study_extraction.csv,selection_filtering_reranking,string,"Candidate selection, filtering, and reranking."
+study_extraction.csv,evidence_integration,string,"Retrieved evidence use, prompting, and interaction with the target generative component."
+study_extraction.csv,models_and_roles,string,"Reported model backbones and preparation, inference, or comparison roles."
+study_extraction.csv,baselines,string,Reported experimental comparators or ablations.
+study_extraction.csv,evaluation_protocol,string,"Reported partitions, isolation checks, target selection, and validation protocol."
+study_extraction.csv,benchmarks,string,Benchmarks from the manuscript benchmark table.
+study_extraction.csv,evaluation_context,string,"Language, platform, ecosystem, or source."
+study_extraction.csv,evaluation_granularity,string,Reported evaluated unit.
+study_extraction.csv,reported_metrics,string,Metrics from the manuscript metrics table.
+evaluation_decisions.csv,study_id,string,"Stable S01-S31 study identifier; original review ID, not publication order."
+evaluation_decisions.csv,study,string,System or study name used in the manuscript.
+evaluation_decisions.csv,citation_key,string,BibTeX key in the manuscript.
+evaluation_decisions.csv,dimension,string,One of six evaluation dimensions in the codebook.
+evaluation_decisions.csv,status,string,"Detailed reported assessment type, not_reported, or not_applicable."
+evaluation_decisions.csv,reported_assessment,boolean,True only for an explicit reported evaluation of this dimension.
+evaluation_decisions.csv,applicable,boolean,Repair dimensions apply to Patch-family studies; the other dimensions apply to the corpus.
+evaluation_decisions.csv,reason,string,Study-specific decision rationale.
+evaluation_decisions.csv,evidence_ids,list,Links to the exact evidence excerpts supporting a decision.

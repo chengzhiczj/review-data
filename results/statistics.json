@@ -1,0 +1,253 @@
+{
+  "n": 31,
+  "publication_years": {
+    "2024": 1,
+    "2025": 15,
+    "2026": 15
+  },
+  "publication_types": {
+    "journal": 17,
+    "conference": 7,
+    "preprint": 7
+  },
+  "principal": {
+    "Discovery": 20,
+    "Analysis": 7,
+    "Mitigation": 4
+  },
+  "coverage": {
+    "D": 22,
+    "A": 20,
+    "M": 9
+  },
+  "stage_cardinality": {
+    "1": 17,
+    "2": 8,
+    "3": 6
+  },
+  "cross_stage": 14,
+  "task_families": {
+    "Identify": 18,
+    "Test": 4,
+    "Characterize": 20,
+    "Verify": 6,
+    "Recommend": 6,
+    "Patch": 5
+  },
+  "resources": {
+    "VR": 21,
+    "Code": 20,
+    "Context": 17
+  },
+  "retrieval": {
+    "SR": 12,
+    "DR": 22,
+    "HR": 7,
+    "GSR": 11,
+    "RTR": 5
+  },
+  "integration": {
+    "Context": 16,
+    "Workflow": 11,
+    "Feature": 4
+  },
+  "reasoning": {
+    "CoT": 9,
+    "GR": 1,
+    "HSR": 9,
+    "MAR": 6,
+    "DG": 6
+  },
+  "contrastive_comparison": 2,
+  "repeated_conditioning": 14,
+  "task_matrix": [
+    [
+      16,
+      4,
+      11,
+      4,
+      4,
+      1
+    ],
+    [
+      0,
+      0,
+      7,
+      1,
+      1,
+      0
+    ],
+    [
+      2,
+      0,
+      2,
+      1,
+      1,
+      4
+    ]
+  ],
+  "resource_matrix": [
+    [
+      13,
+      14,
+      12
+    ],
+    [
+      6,
+      2,
+      4
+    ],
+    [
+      2,
+      4,
+      1
+    ]
+  ],
+  "retrieval_matrix": [
+    [
+      6,
+      15,
+      3,
+      8,
+      3
+    ],
+    [
+      3,
+      3,
+      1,
+      1,
+      2
+    ],
+    [
+      3,
+      4,
+      3,
+      2,
+      0
+    ]
+  ],
+  "integration_matrix": [
+    [
+      9,
+      7,
+      4
+    ],
+    [
+      5,
+      2,
+      0
+    ],
+    [
+      2,
+      2,
+      0
+    ]
+  ],
+  "reasoning_matrix": [
+    [
+      8,
+      0,
+      5,
+      5,
+      2,
+      2
+    ],
+    [
+      1,
+      1,
+      2,
+      0,
+      3,
+      0
+    ],
+    [
+      0,
+      0,
+      2,
+      1,
+      1,
+      0
+    ]
+  ],
+  "evaluation": {
+    "retrieval_relevance": {
+      "count": 6,
+      "denominator": 31,
+      "percent": 19.4,
+      "studies": [
+        "Vul-RAG",
+        "RASM-Vul",
+        "CRVA-TGRAG",
+        "MR-LLM",
+        "PailGen",
+        "AutoPatch"
+      ]
+    },
+    "context_recall": {
+      "count": 1,
+      "denominator": 31,
+      "percent": 3.2,
+      "studies": [
+        "CRVA-TGRAG"
+      ]
+    },
+    "provenance": {
+      "count": 1,
+      "denominator": 31,
+      "percent": 3.2,
+      "studies": [
+        "ProveRAG"
+      ]
+    },
+    "claim_faithfulness": {
+      "count": 1,
+      "denominator": 31,
+      "percent": 3.2,
+      "studies": [
+        "CRVA-TGRAG"
+      ]
+    },
+    "functional_correctness": {
+      "count": 1,
+      "denominator": 31,
+      "percent": 3.2,
+      "studies": [
+        "PailGen"
+      ],
+      "patch_denominator": 5,
+      "patch_percent": 20.0
+    },
+    "post_repair_security": {
+      "count": 4,
+      "denominator": 31,
+      "percent": 12.9,
+      "studies": [
+        "MR-LLM",
+        "SCPatcher",
+        "PailGen",
+        "AutoPatch"
+      ],
+      "patch_denominator": 5,
+      "patch_percent": 80.0
+    }
+  },
+  "retrieval_with_judgment_or_gold_match": [
+    "Vul-RAG",
+    "CRVA-TGRAG",
+    "MR-LLM",
+    "PailGen",
+    "AutoPatch"
+  ],
+  "post_repair_security_tool_or_test": [
+    "MR-LLM",
+    "SCPatcher",
+    "PailGen"
+  ],
+  "patch_studies": [
+    "Argus",
+    "MR-LLM",
+    "SCPatcher",
+    "PailGen",
+    "AutoPatch"
+  ]
+}

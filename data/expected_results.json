@@ -1,0 +1,71 @@
+{
+  "n": 31,
+  "publication_years": {
+    "2024": 1,
+    "2025": 15,
+    "2026": 15
+  },
+  "publication_types": {
+    "journal": 17,
+    "conference": 7,
+    "preprint": 7
+  },
+  "principal": {
+    "Discovery": 20,
+    "Analysis": 7,
+    "Mitigation": 4
+  },
+  "coverage": {
+    "D": 22,
+    "A": 20,
+    "M": 9
+  },
+  "stage_cardinality": {
+    "1": 17,
+    "2": 8,
+    "3": 6
+  },
+  "cross_stage": 14,
+  "task_families": {
+    "Identify": 18,
+    "Test": 4,
+    "Characterize": 20,
+    "Verify": 6,
+    "Recommend": 6,
+    "Patch": 5
+  },
+  "resources": {
+    "VR": 21,
+    "Code": 20,
+    "Context": 17
+  },
+  "retrieval": {
+    "SR": 12,
+    "DR": 22,
+    "HR": 7,
+    "GSR": 11,
+    "RTR": 5
+  },
+  "integration": {
+    "Context": 16,
+    "Workflow": 11,
+    "Feature": 4
+  },
+  "reasoning": {
+    "CoT": 9,
+    "GR": 1,
+    "HSR": 9,
+    "MAR": 6,
+    "DG": 6
+  },
+  "contrastive_comparison": 2,
+  "repeated_conditioning": 14,
+  "evaluation": {
+    "retrieval_relevance": 6,
+    "context_recall": 1,
+    "provenance": 1,
+    "claim_faithfulness": 1,
+    "functional_correctness": 1,
+    "post_repair_security": 4
+  }
+}

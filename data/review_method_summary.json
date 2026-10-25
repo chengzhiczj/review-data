@@ -1,0 +1,115 @@
+{
+  "review_cutoff": "2026-06",
+  "publication_window": "2024 to June 2026",
+  "publication_year_rule": "Use the formal publication year, including journal early access, if available by the cutoff. Otherwise use the initial arXiv submission year.",
+  "screening_flow": {
+    "database_records": 3914,
+    "duplicates_removed": 677,
+    "unique_records": 3237,
+    "title_abstract_excluded": 3128,
+    "database_full_text": 109,
+    "full_text_excluded": 82,
+    "database_included": 27,
+    "snowball_candidates": 10,
+    "snowball_included": 4,
+    "final_included": 31
+  },
+  "quality_assessment": {
+    "data_origin": "aggregate results reported in the manuscript",
+    "reviewers": 2,
+    "resolution": "discussion, with a third reviewer if needed",
+    "item_scores": [
+      10,
+      7,
+      4,
+      1
+    ],
+    "score_range": [
+      10,
+      100
+    ],
+    "exclusion_threshold": 65,
+    "exclusion_rule": "both reviewers independently score below 65; disagreements resolved as specified in the protocol",
+    "included_study_summary": {
+      "n": 31,
+      "minimum": 67,
+      "maximum": 97,
+      "median": 82,
+      "mean": 81.3
+    },
+    "incomplete_reporting": [
+      {
+        "item": "QA6",
+        "n": 21,
+        "percent": 67.7
+      },
+      {
+        "item": "QA2",
+        "n": 18,
+        "percent": 58.1
+      },
+      {
+        "item": "QA3",
+        "n": 17,
+        "percent": 54.8
+      }
+    ],
+    "reported_binary_agreement": {
+      "cohens_kappa": 0.81,
+      "database_full_text_candidates": 109,
+      "stage": "before consensus"
+    },
+    "checklist": [
+      {
+        "id": "QA1",
+        "dimension": "Problem definition and scope",
+        "criterion": "The study clearly defines the software vulnerability task, target artifact, research objective, and intended output."
+      },
+      {
+        "id": "QA2",
+        "dimension": "Knowledge-source design",
+        "criterion": "The study describes the retrieved knowledge source(s), their provenance, construction or curation process, and unit of retrieval, as well as their temporal scope where applicable."
+      },
+      {
+        "id": "QA3",
+        "dimension": "Retrieval strategy",
+        "criterion": "The study reports the query formulation, retriever or representation method, indexing approach, and retrieval depth, together with any applicable filtering or reranking mechanisms."
+      },
+      {
+        "id": "QA4",
+        "dimension": "Evidence integration and reasoning",
+        "criterion": "The study explains how retrieved evidence is incorporated into prompts, models, graphs, tools, agents, or iterative reasoning processes, and how this evidence contributes to the final task output."
+      },
+      {
+        "id": "QA5",
+        "dimension": "Experimental or case-study design",
+        "criterion": "The study reports the dataset or target system, selection or data-splitting procedure, experimental environment, and evaluation protocol in sufficient detail to support the interpretation of the results."
+      },
+      {
+        "id": "QA6",
+        "dimension": "Baselines and ablation studies",
+        "criterion": "The study compares the proposed method with meaningful baselines and, where applicable, reports ablation studies involving the no-retrieval setting, retriever, reranker, fusion mechanism, or backbone model."
+      },
+      {
+        "id": "QA7",
+        "dimension": "Evaluation and validation",
+        "criterion": "The study employs task-appropriate evaluation metrics and reports sufficient results, including functional, security-oriented, or execution-based validation where required by the task."
+      },
+      {
+        "id": "QA8",
+        "dimension": "Reproducibility information",
+        "criterion": "The study reports the models, key prompts or agent roles, retrieval corpus, implementation details, and tool configurations, and indicates the availability of code, data, or other research artifacts where applicable."
+      },
+      {
+        "id": "QA9",
+        "dimension": "Limitations and threats to validity",
+        "criterion": "The study discusses relevant limitations, failure cases, threats to validity, security risks, deployment constraints, or important assumptions."
+      },
+      {
+        "id": "QA10",
+        "dimension": "Reporting transparency",
+        "criterion": "The study provides sufficient information to determine the centrality of RAG to the proposed method, its relevance to software vulnerability lifecycle tasks, and the required data-extraction fields without requiring unsupported inferences by the reviewers."
+      }
+    ]
+  }
+}

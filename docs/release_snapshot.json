@@ -1,0 +1,18 @@
+{
+  "release_date": "2026-10-22",
+  "main_tex_sha256": "e0cbd45f669dd11fa793d4d40a3180f347f2e97a3159b5267513a0fa0490f6dd",
+  "mylib_bib_sha256": "681582066e82d8dc6bcd444d88688aef28c7e92585c9e172efa07aeee996b1f2",
+  "studies": 31,
+  "evaluation_decisions": 186,
+  "source_excerpts": 433,
+  "source_texts": 31,
+  "manuscript_included": false,
+  "figure_pdf_outputs": 9,
+  "assembly_sources": [
+    "current manuscript and bibliography",
+    "final lifecycle and mechanism coding",
+    "31-study primary-text extraction audit",
+    "31-study six-dimension evaluation audit",
+    "publication metadata audit under the manuscript cutoff policy"
+  ]
+}

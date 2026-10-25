@@ -1,0 +1,58 @@
+# Data dictionary
+
+The JSON master retains arrays and Boolean values. CSV arrays use a semicolon followed by a space; empty cells represent unavailable scalar metadata or empty lists as defined by the field. Files use UTF-8 (CSV files include a BOM for spreadsheet software). Evidence links use stable IDs.
+
+- `study_id`: Stable S01-S31 study identifier; original review ID, not publication order.
+- `name`: System or study name used in the manuscript.
+- `study`: System or study name used in the manuscript.
+- `citation_key`: BibTeX key in the manuscript.
+- `review_year`: Year used in the manuscript publication distribution under the June 2026 cutoff rule.
+- `review_publication_type`: Publication type available at the June 2026 cutoff: journal, conference, or preprint.
+- `bibliography_year`: Year of the version cited in the current bibliography; may differ from review_year.
+- `bibliography_entry_type`: Current BibTeX entry type.
+- `title`: Title from the current bibliography.
+- `authors`: BibTeX author list, preserving any reported and others truncation.
+- `venue`: Journal or conference title from the current bibliography.
+- `doi`: DOI if documented.
+- `url`: Primary publisher or preprint link.
+- `arxiv_id`: Documented arXiv identifier where available.
+- `source_urls`: Links supporting study identity and publication metadata.
+- `review_year_basis`: Formal publication/early access or initial arXiv submission, according to cutoff availability.
+- `principal_contribution`: One primary lifecycle stage.
+- `lifecycle_coverage`: Non-exclusive delivered stage outputs.
+- `supporting_stage_outputs`: Dagger-marked supporting outputs in the manuscript.
+- `task_families`: Non-exclusive output-based task-family codes.
+- `knowledge_resources`: Non-exclusive retrieved resource types.
+- `retrieval_components`: Non-exclusive retrieval mechanisms.
+- `integration_route`: One principal integration route.
+- `repeated_conditioning`: Inference-time reuse or correction across generation steps.
+- `reasoning_mode`: One principal generative reasoning mode.
+- `contrastive_comparison`: Additional orthogonal contrastive reasoning code.
+- `task_output_summary`: English description of the delivered target outputs and coding boundaries.
+- `query`: Reported primary-system evidence-retrieval query or query construction; not the survey literature-search query.
+- `knowledge_unit_representation_index`: Retrieved evidence unit, representation, or indexing details.
+- `selection_filtering_reranking`: Candidate selection, filtering, and reranking.
+- `evidence_integration`: Retrieved evidence use, prompting, and interaction with the target generative component.
+- `models_and_roles`: Reported model backbones and preparation, inference, or comparison roles.
+- `baselines`: Reported experimental comparators or ablations.
+- `evaluation_protocol`: Reported partitions, isolation checks, target selection, and validation protocol.
+- `benchmarks`: Benchmarks from the manuscript benchmark table.
+- `evaluation_context`: Language, platform, ecosystem, or source.
+- `evaluation_granularity`: Reported evaluated unit.
+- `reported_metrics`: Metrics from the manuscript metrics table.
+- `source_evidence_ids`: Links to extraction locators in evidence/excerpts.jsonl.
+- `field_sources`: Source of the released extraction field: current manuscript table or primary-text audit.
+- `dimension`: One of six evaluation dimensions in the codebook.
+- `status`: Detailed reported assessment type, not_reported, or not_applicable.
+- `reported_assessment`: True only for an explicit reported evaluation of this dimension.
+- `applicable`: Repair dimensions apply to Patch-family studies; the other dimensions apply to the corpus.
+- `reason`: Study-specific decision rationale.
+- `evidence_ids`: Links to the exact evidence excerpts supporting a decision.
+- `evidence_id`: Unique excerpt identifier.
+- `source_id`: Source-text identifier in source_index.csv.
+- `text_filename`: Original extracted-text filename; no machine-specific directory is required.
+- `source_sha256`: SHA-256 of the complete source text used for line addressing.
+- `start_line`: First source-text line, one-based and inclusive.
+- `end_line`: Last source-text line, inclusive.
+- `text`: Verbatim excerpt without the original audit line-number prefix.
+- `purposes`: Extraction or evaluation uses of an excerpt.

@@ -1,0 +1,27 @@
+\begin{figure}[!t]
+\centering
+\resizebox{\columnwidth}{!}{%
+\begin{tikzpicture}[node distance=0.9cm and 1.6cm]
+\node[slrbox] (identified) {Records identified through\\database searching\\($n = 3{,}914$)};
+\node[slrbox, below=of identified] (dedup) {Records after duplicate removal\\($n = 3{,}237$)};
+\node[slrbox, below=of dedup] (screened) {Records screened by title, abstract,\\and keywords\\($n = 3{,}237$)};
+\node[slrsmall, right=of screened] (excluded1) {Records excluded\\($n = 3{,}128$)};
+\node[slrbox, below=of screened] (fulltext) {Full-text studies assessed\\for eligibility and reporting\\completeness ($n = 109$)};
+\node[slrsmall, right=of fulltext] (excluded2) {Full-text studies excluded\\($n = 82$)};
+\node[slrbox, below=of fulltext] (includeddb) {Studies included from\\database search\\($n = 27$)};
+\node[slrsmall, right=of includeddb] (snowball) {Additional studies examined\\through snowballing ($n = 10$)\\Included: $n = 4$};
+\node[slrbox, below=of includeddb] (final) {Final primary studies included\\in the review\\($n = 31$)};
+
+\draw[slrarrow] (identified) -- (dedup);
+\draw[slrarrow] (dedup) -- (screened);
+\draw[slrarrow] (screened) -- (fulltext);
+\draw[slrarrow] (fulltext) -- (includeddb);
+\draw[slrarrow] (includeddb) -- (final);
+\draw[slrarrow] (screened) -- (excluded1);
+\draw[slrarrow] (fulltext) -- (excluded2);
+\draw[slrarrow] (snowball.south) |- (final.east);
+\end{tikzpicture}%
+}
+\caption{Study selection flow for the systematic literature review.}
+\label{fig:study_selection_flow}
+\end{figure}

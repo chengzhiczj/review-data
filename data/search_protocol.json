@@ -1,0 +1,142 @@
+{
+  "record_type": "documented_protocol_and_reported_aggregate_counts",
+  "record_origin": "transcribed from the survey methodology during package preparation",
+  "search_period": "2026-06",
+  "publication_window": "2024 to June 2026",
+  "sources": [
+    "ACM Digital Library",
+    "IEEE Xplore",
+    "ScienceDirect",
+    "SpringerLink",
+    "Wiley Online Library",
+    "arXiv",
+    "Scopus",
+    "Web of Science"
+  ],
+  "concept_blocks": {
+    "RAG mechanism": "\"retrieval-augmented\" OR \"retrieval augmented\" OR \"retrieval-augmented generation\" OR \"retrieval augmented generation\" OR \"retrieval-enhanced generation\" OR \"retrieval-grounded generation\" OR \"knowledge-augmented generation\" OR \"knowledge-grounded generation\" OR \"retrieval-augmented LLM*\" OR \"RAG-based\" OR \"RAG-enhanced\" OR (RAG AND (LLM* OR \"large language model*\"))",
+    "Software vulnerability domain": "\"software secur*\" OR software OR code OR program* OR \"source code\" OR \"smart contract*\" OR blockchain OR vulnerab* OR weakness* OR \"security flaw*\" OR CVE OR CWE OR NVD OR CVSS OR SWC OR OWASP",
+    "Vulnerability Discovery": "\"vulnerability detect*\" OR \"vulnerability discover*\" OR \"weakness detect*\" OR \"security flaw detect*\" OR \"static analy*\" OR \"dynamic analy*\" OR fuzz* OR \"fuzz test*\" OR \"seed generat*\" OR \"security audit*\" OR \"code audit*\" OR \"audit report*\" OR \"smart contract audit*\"",
+    "Vulnerability Analysis": "\"vulnerability analys*\" OR \"vulnerability assessment\" OR \"vulnerability classification\" OR \"root-cause analys*\" OR \"severity assessment\" OR \"risk assessment\" OR \"impact analys*\" OR exploitabilit* OR CVSS OR \"CWE map*\" OR \"SWC map*\" OR \"OWASP map*\" OR \"ATT&CK map*\" OR \"vulnerability validat*\" OR \"vulnerability reproduc*\" OR \"exploit generat*\" OR \"exploit verif*\"",
+    "Vulnerability Mitigation": "\"vulnerability mitigat*\" OR \"vulnerability remediat*\" OR \"security remediat*\" OR \"vulnerability repair\" OR \"security repair\" OR \"repair recommendation*\" OR \"vulnerability patch*\" OR \"security patch*\" OR \"security fix*\" OR \"patch generat*\" OR \"patch validat*\" OR \"repair validat*\" OR \"mitigation guideline*\""
+  },
+  "query_composition": "(RAG mechanism) AND (Software vulnerability domain) AND (one lifecycle-stage task block)",
+  "source_adaptations": {
+    "Scopus and Web of Science": "Titles, abstracts, and keywords, with database-specific syntax.",
+    "arXiv": "Separate phrase searches over titles and abstracts using the native advanced-search interface.",
+    "other sources": "Closest available advanced-search fields, with syntax adapted to each source."
+  },
+  "duplicate_identification_fields": [
+    "title",
+    "authors",
+    "publication year",
+    "venue",
+    "DOI",
+    "URL"
+  ],
+  "version_selection": "Retain the most complete version. Prefer a peer-reviewed version when it contains equivalent or more complete information.",
+  "screening": {
+    "reviewers": 2,
+    "mode": "independent researcher screening with discussion of disagreements",
+    "stages": [
+      "duplicate removal",
+      "title/abstract/keyword screening",
+      "full-text eligibility and quality assessment"
+    ],
+    "exclusion_counting": "One primary exclusion reason per excluded study.",
+    "inclusion_criteria": [
+      {
+        "id": "IC1",
+        "criterion": "The study uses task-specific retrieved evidence, or information explicitly derived from it, to condition a generative component within an implemented software vulnerability workflow, under the review's operational RAG definition."
+      },
+      {
+        "id": "IC2",
+        "criterion": "The study addresses at least one task within Vulnerability Discovery, Vulnerability Analysis, or Vulnerability Mitigation."
+      },
+      {
+        "id": "IC3",
+        "criterion": "The study investigates software-related security artifacts, such as source code, smart contracts, patches, repositories, vulnerability reports, issue reports, security advisories, CVE/CWE/NVD records, or other software vulnerability knowledge sources."
+      },
+      {
+        "id": "IC4",
+        "criterion": "The study proposes and implements a concrete RAG-based method, system, framework, or workflow for a software vulnerability lifecycle task. The retrieval-to-generation dependency must be documented as part of the implemented vulnerability workflow, including task-specific retrieved demonstrations or evidence-derived features."
+      },
+      {
+        "id": "IC5",
+        "criterion": "The study reports sufficient information to identify the target task, the role of retrieval or external knowledge, and the experimental or case-analysis setting."
+      },
+      {
+        "id": "IC6",
+        "criterion": "The study is a peer-reviewed primary publication or preprint represented by an English-language version published or publicly released between 2024 and the search cutoff in June 2026, and its full text is accessible."
+      }
+    ],
+    "exclusion_criteria": [
+      {
+        "id": "EC1",
+        "criterion": "The study does not implement a task-specific retrieval-to-generation dependency within a software vulnerability workflow, or uses external knowledge only as background material."
+      },
+      {
+        "id": "EC2",
+        "criterion": "The abbreviation “RAG” refers to a meaning other than Retrieval-Augmented Generation."
+      },
+      {
+        "id": "EC3",
+        "criterion": "The study focuses on general cybersecurity, hardware security, network defense, medical safety, policy compliance, or other domains without directly addressing software vulnerability discovery, analysis, or mitigation."
+      },
+      {
+        "id": "EC4",
+        "criterion": "The study investigates RAG systems themselves as the object of study, such as hallucination analysis, retriever evaluation, or prompt studies, rather than applying RAG to a software vulnerability task."
+      },
+      {
+        "id": "EC5",
+        "criterion": "The study only mentions or evaluates generic RAG without implementing and describing its retrieval-to-generation dependency for a software vulnerability output."
+      },
+      {
+        "id": "EC6",
+        "criterion": "The publication is a survey, review, tutorial, editorial, keynote, poster abstract, position paper, or another non-primary work."
+      },
+      {
+        "id": "EC7",
+        "criterion": "The study is a duplicate, superseded version, or preliminary version of another included paper; in such cases, the most complete formally available version is retained."
+      },
+      {
+        "id": "EC8",
+        "criterion": "The full text is inaccessible, or the available metadata and content are insufficient to determine relevance and extract the required study information."
+      },
+      {
+        "id": "EC9",
+        "criterion": "The study is not written in English."
+      }
+    ]
+  },
+  "snowballing": "Backward reference checks and forward citation checks using Google Scholar Cited by, with the same eligibility and quality criteria.",
+  "reported_screening_flow": {
+    "database_records": 3914,
+    "duplicates_removed": 677,
+    "unique_records": 3237,
+    "title_abstract_excluded": 3128,
+    "database_full_text": 109,
+    "full_text_excluded": 82,
+    "database_included": 27,
+    "snowball_candidates": 10,
+    "snowball_included": 4,
+    "final_included": 31
+  },
+  "reproduction_scope": {
+    "included": [
+      "documented search concept blocks and protocol",
+      "eligibility criteria",
+      "reported aggregate selection counts",
+      "final 31-study inventory",
+      "coding-based synthesis, statistics, and figures"
+    ],
+    "not_included": [
+      "original database export files",
+      "timestamped source-specific query execution logs",
+      "record-level duplicate decisions",
+      "individual screening decisions"
+    ],
+    "historical_search_reexecution": false,
+    "automated_screening_claimed": false
+  }
+}

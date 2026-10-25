@@ -1,0 +1,32 @@
+﻿study_id,study,citation_key,principal_contribution,lifecycle_coverage,supporting_stage_outputs,task_families,knowledge_resources,retrieval_components,integration_route,repeated_conditioning,reasoning_mode,contrastive_comparison
+S01,SyzGPT,zhang2025unlocking,Discovery,D,,Test,Code; Context,SR; GSR,Workflow,True,HSR,False
+S02,Vul-RAG,du2024vul,Discovery,D,,Identify,VR; Code,SR,Context,True,CoT,False
+S03,RASM-Vul,zhao2026retrieval,Discovery,D; A,,Identify; Characterize,VR; Code,DR; GSR,Context,False,HSR,False
+S04,DeepVulHunter,jiao2025deepvulhunter,Discovery,D; A,,Identify; Characterize,VR; Code,DR,Context,True,HSR,False
+S05,CodeRAG,liu2026software,Discovery,D; A,,Identify; Characterize,Code,SR; DR; HR; GSR,Context,False,HSR,True
+S06,MulVul,wu2026mulvul,Discovery,D,,Identify,VR; Code,DR,Workflow,False,MAR,True
+S07,HyVD-VP,wang2026fine,Discovery,D; A,,Identify; Characterize; Verify,VR; Code,DR; RTR,Workflow,True,HSR,False
+S08,KLRAG,liao2025klrag,Discovery,D,,Test,Code; Context,DR,Context,False,DG,False
+S09,VulRTex,jiang2026vulrtex,Discovery,D; A,,Identify; Characterize,VR; Context,SR; GSR,Context,False,CoT,False
+S10,VoidSight,xiaotian2025collaborative,Discovery,D; A,,Identify; Characterize; Verify,VR; Code; Context,DR,Workflow,True,MAR,False
+S11,Argus,liang2026argus,Discovery,D; A; M,M,Identify; Characterize; Verify; Recommend; Patch,VR; Code; Context,RTR,Workflow,True,MAR,False
+S12,RLV,qiu2026rlv,Discovery,D,,Identify,Code,RTR,Context,False,CoT,False
+S13,DeepDesc,tan2026deepdesc,Discovery,D,,Identify,Context,DR,Feature,False,DG,False
+S14,RAG-SmartVuln,nhu2025rag,Discovery,D; A; M,M,Identify; Characterize; Recommend,VR; Code; Context,SR; DR; HR; GSR,Context,True,CoT,False
+S15,ParaVul,huang2025paravul,Discovery,D; A; M,M,Identify; Characterize; Recommend,Code,SR; DR; HR,Feature,False,CoT,False
+S16,TaK-Fuzz,khoa2025tak,Discovery,D,,Test,VR; Context,DR; GSR,Context,False,CoT,False
+S17,UniFuzz,nhat2025unifuzz,Discovery,D,,Test,Context,DR,Workflow,True,MAR,False
+S18,DSS,wang2025llm,Discovery,D,,Identify,VR; Code; Context,DR; GSR,Feature,False,CoT,False
+S19,ORACAL,dai2026oracal,Discovery,D; A,,Identify; Characterize,VR; Context,DR; GSR,Feature,False,CoT,False
+S25,SmartAuditFlow,wei2025smartauditflow,Discovery,D; A; M,M,Identify; Characterize; Verify; Recommend,VR; Context,DR,Workflow,True,MAR,False
+S20,ReVul-CoT,chen2026revul,Analysis,A,,Characterize,VR; Code,DR,Context,False,CoT,False
+S21,ChatNVD,chopra2026chatnvd,Analysis,A,,Characterize,VR,SR,Context,False,DG,False
+S22,ProveRAG,fayyazi2025proverag,Analysis,A; M,M,Characterize; Recommend,VR; Context,DR; RTR,Context,True,HSR,False
+S23,VDM-IOG,yu2026vdm,Analysis,A,,Characterize,VR; Context,GSR,Workflow,True,GR,False
+S24,CRVA-TGRAG,zhou2026tug,Analysis,A,,Characterize,VR,SR; DR; HR,Context,False,DG,False
+S26,RAR,lotfi2025automated,Analysis,A,,Characterize; Verify,VR; Code; Context,RTR,Workflow,True,HSR,False
+S31,VulLibGen,chen2024vullibgen,Analysis,A,,Characterize,Context,SR,Context,False,DG,False
+S27,MR-LLM,amoah2025explainable,Mitigation,D; A; M,D; A,Identify; Characterize; Recommend; Patch,VR; Code,SR; DR; HR,Context,False,HSR,False
+S28,SCPatcher,li2026scpatcher,Mitigation,M,,Patch,Code,DR; GSR,Workflow,True,HSR,False
+S29,PailGen,shao2026fix,Mitigation,M,,Patch,Code,SR; DR; HR,Context,False,DG,False
+S30,AutoPatch,seo2025autopatch,Mitigation,D; A; M,,Identify; Characterize; Verify; Patch,VR; Code; Context,SR; DR; HR; GSR,Workflow,True,MAR,False

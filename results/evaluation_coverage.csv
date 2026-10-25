@@ -1,0 +1,7 @@
+﻿dimension,count,denominator,percent,studies,patch_denominator,patch_percent
+retrieval_relevance,6,31,19.4,Vul-RAG; RASM-Vul; CRVA-TGRAG; MR-LLM; PailGen; AutoPatch,,
+context_recall,1,31,3.2,CRVA-TGRAG,,
+provenance,1,31,3.2,ProveRAG,,
+claim_faithfulness,1,31,3.2,CRVA-TGRAG,,
+functional_correctness,1,31,3.2,PailGen,5,20.0
+post_repair_security,4,31,12.9,MR-LLM; SCPatcher; PailGen; AutoPatch,5,80.0

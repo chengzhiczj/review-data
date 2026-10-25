@@ -1,0 +1,43 @@
+{
+  "test_date": "2026-10-22",
+  "reference_python": "3.14.0",
+  "isolated_run": {
+    "passed": true,
+    "source_package_copy": "copied without manuscript, precomputed results, or bytecode caches",
+    "execution": "python reproduce.py",
+    "required_original_workspace": false,
+    "required_manuscript": false,
+    "runtime_network_requests": false,
+    "data_file_comparisons": {
+      "statistics.json": true,
+      "study_coding.csv": true,
+      "study_extraction.csv": true,
+      "publication_metadata.csv": true,
+      "evaluation_decisions.csv": true,
+      "evaluation_coverage.csv": true,
+      "validation.json": true
+    },
+    "pdf_figure_byte_comparisons": {
+      "knowledge_bar.pdf": true,
+      "lifecycle.pdf": true,
+      "pie_distribution.pdf": true,
+      "pub_venue_type.pdf": true,
+      "pub_year.pdf": true,
+      "rag_pipeline.pdf": true,
+      "rag_settings_heatmap.pdf": true,
+      "study_selection_flow.pdf": true,
+      "task_taxonomy.pdf": true
+    }
+  },
+  "validation": {
+    "passed": true,
+    "studies": 31,
+    "evaluation_decisions": 186,
+    "source_excerpts": 433,
+    "primary_references": 31,
+    "errors": []
+  },
+  "original_manuscript_unchanged": true,
+  "survey_manuscript_in_package": false,
+  "search_materials_scope": "documented protocol and aggregate counts; no reconstruction of original database exports or individual screening decisions"
+}
